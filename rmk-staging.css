@@ -415,7 +415,7 @@ body,
 html body.coreCSB,
 .btn,
 body .btn {
-  font-family: "custom99a2a1422a3c435aa4849", arial, helvetica, helvetica-neue,sans-serif";
+  font-family: "custom99a2a1422a3c435aa4849", arial, helvetica, helvetica-neue, sans-serif;
 }
 
 ::-webkit-input-placeholder {
@@ -423,7 +423,7 @@ body .btn {
   color: #000;
   font-style: normal;
   font-weight: normal;
-  font-family: "custom99a2a1422a3c435aa4849", arial, helvetica, helvetica-neue,sans-serif";
+  font-family: "custom99a2a1422a3c435aa4849", arial, helvetica, helvetica-neue, sans-serif;
   opacity: 1;
 }
 
@@ -433,7 +433,7 @@ body .btn {
   font-style: normal;
   font-weight: normal;
   font-family: "custom99a2a1422a3c435aa4849", arial, helvetica, helvetica-neue,
-    sans-serif";
+    sans-serif;
   opacity: 1;
 }
 
@@ -443,7 +443,7 @@ body .btn {
   font-style: normal;
   font-weight: normal;
   font-family: "custom99a2a1422a3c435aa4849", arial, helvetica, helvetica-neue,
-    sans-serif";
+    sans-serif;
   opacity: 1;
 }
 
@@ -453,7 +453,7 @@ body .btn {
   font-style: normal;
   font-weight: normal;
   font-family: "custom99a2a1422a3c435aa4849", arial, helvetica, helvetica-neue,
-    sans-serif";
+    sans-serif;
   opacity: 1;
 }
 
@@ -499,7 +499,7 @@ body.coreCSB div.ukCookiePolicy {
   text-transform: uppercase;
   font-size: 11px;
   letter-spacing: 0px;
-  font-family: 'custombcf8726fdbf84db0ba68c, Helvetica, Arial, sans-serif';
+  font-family: "custombcf8726fdbf84db0ba68c", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -619,12 +619,12 @@ button {
 body.coreCSB div.ukCookiePolicy>div.container,
 body.coreCSB div.ukCookiePolicy>div.container button.btn#cookie-acknowledge,
 button {
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 25px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 25px center no-repeat #fc4237 !important;
   color: #fff;
 }
 
 .btn {
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 25px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 25px center no-repeat #fc4237 !important;
   color: #fff;
 }
 
@@ -645,7 +645,7 @@ body.coreCSB div.ukCookiePolicy>div.container button.btn#cookie-acknowledge:hove
 button:active,
 button:hover {
   color: #fff;
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 20px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 20px center no-repeat #fc4237 !important;
   cursor: pointer !important;
 }
 
@@ -675,7 +675,7 @@ body.coreCSB.home-page .buttontext>.inner .col-xs-12 .btn:hover,
 body.coreCSB.job-page .facts .facts-apply button:active,
 body.coreCSB.job-page .facts .facts-apply button:hover {
   color: rgb(255, 255, 255) !important;
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 20px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 20px center no-repeat #fc4237 !important;
   cursor: pointer !important;
 }
 
@@ -698,7 +698,6 @@ body.coreCSB.job-page .facts .facts-apply button:visited {
 body,
 html {
   -webkit-font-smoothing: antialiased !important;
-  -moz-font-smoothing: unset !important;
   -webkit-backface-visibility: hidden !important;
   backface-visibility: hidden !important;
 }
@@ -892,7 +891,10 @@ textarea:focus {
 
 button:focus,
 a:focus,
-a:active,
+a:active {
+  outline: none !important;
+}
+
 button::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
@@ -919,7 +921,7 @@ button {
   line-height: 1.36;
   cursor: pointer !important;
   transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 10px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 10px center no-repeat #fc4237 !important;
 }
 
 body.coreCSB div.ukCookiePolicy {
@@ -1486,10 +1488,7 @@ body.coreCSB.job-page .jobDisplay .jobdescription {
 
 ol:empty,
 p:empty,
-ul:empty,
-ol:blank,
-ul:blank,
-p:blank {
+ul:empty {
   display: none;
 }
 
@@ -1501,7 +1500,7 @@ p:blank {
 .jobDisplay p strong {
   font-family: "custom99a2a1422a3c435aa4849", Arial, Helvetica, Helvetica-Neue,
     sans-serif !important;
-  color: red !important;
+  color: #fc4237 !important;
   margin: 0 !important;
   font-size: 55px !important;
   letter-spacing: 1.5px;
@@ -1568,7 +1567,12 @@ body.coreCSB.job-page .jobDisplay .jobdescription ol:empty,
 body.coreCSB.job-page .jobDisplay .jobdescription p:empty,
 body.coreCSB.job-page .jobDisplay .jobdescription ul:empty,
 span.jobdescription p:empty,
-span.jobdescription * p:empty,
+span.jobdescription * p:empty {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Firefox-only, eigene Regel damit Chrome/Safari die Liste oben nicht verwerfen */
 span.jobdescription p:-moz-only-whitespace {
   display: none !important;
   visibility: hidden !important;
@@ -2080,7 +2084,7 @@ body.coreCSB .talentlanding-page~#noresults {
   font-size: 100% !important;
 }
 
-#header .lower .links .node:not(last-child) {
+#header .lower .links .node:not(:last-child) {
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -2230,16 +2234,8 @@ body.coreCSB.job-page .jobColumnTwo h1 {
   -webkit-hyphenate-limit-zone: 8%;
 
   -moz-hyphens: auto;
-  -moz-hyphenate-limit-chars: 6 3 3;
-  -moz-hyphenate-limit-lines: 2;
-  -moz-hyphenate-limit-last: always;
-  -moz-hyphenate-limit-zone: 8%;
 
   -ms-hyphens: auto;
-  -ms-hyphenate-limit-chars: 6 3 3;
-  -ms-hyphenate-limit-lines: 2;
-  -ms-hyphenate-limit-last: always;
-  -ms-hyphenate-limit-uone: 8%;
   text-decoration: none !important;
 }
 
@@ -2262,10 +2258,12 @@ body.coreCSB.job-page .jobColumnTwo h1 {
   width: 65% !important;
 }
 
+/* Debug-Regel deaktiviert (blau/rot):
 .jobColumnTwo .joblayouttoken span:nth-child(n + 2):nth-child(odd):nth-child(-n + 9) {
   background-color: #298eb2 !important;
   color: red !important;
 }
+*/
 
 .jobdescription>table,
 td {
@@ -2317,15 +2315,8 @@ td {
   -webkit-hyphenate-limit-zone: 8%;
 
   -moz-hyphens: auto;
-  -moz-hyphenate-limit-chars: 6 3 3;
-  -moz-hyphenate-limit-lines: 2;
-  -moz-hyphenate-limit-last: always;
-  -moz-hyphenate-limit-zone: 8%;
 
   -ms-hyphens: auto;
-  -ms-hyphenate-limit-chars: 6 3 3;
-  -ms-hyphenate-limit-lines: 2;
-  -ms-hyphenate-limit-last: always;
   background-size: 100%;
   background-position: top center;
   background-origin: content-box;
@@ -2588,7 +2579,7 @@ body.coreCSB .outershellreebok .btn,
 .col-xs-12:last-child,
 .col-sm-12:last-child,
 .col-md-12:last-child,
-.col-lg-12 {
+.col-lg-12:last-child {
   padding-right: 0 !important;
 }
 
@@ -2781,7 +2772,6 @@ body {
       #4040ff 83.33%,
       #a000c0 83.33%,
       #a000c0);
-  border-image-slice: 100%;
   border-image-slice: 60 30;
   text-align: center;
   transition: all 2s;
@@ -3025,7 +3015,7 @@ ul.slick-slider.slick-initialized button {
 
 .slick-next {
   right: 4vw !important;
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 0px center no-repeat transparent !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 0px center no-repeat transparent !important;
   background-size: 110% !important;
   z-index: 90;
   transition: background-position 0.4s cubic-bezier(0.19, 1, 0.22, 1),
@@ -3155,7 +3145,7 @@ button.slick-prev:focus {
   padding: 2vh 0 !important;
 }
 
-imagecarousel4 {
+.imagecarousel4 {
   padding-bottom: 4vh;
 }
 
@@ -3491,7 +3481,7 @@ body.mobileApplyCtr * table,
 }
 
 .mobileApplyCtr .aquabtn button {
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 10px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 10px center no-repeat #fc4237 !important;
   transition: background-position 0.4s cubic-bezier(0.19, 1, 0.22, 1),
     background-color 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   background-color: #fc4237 !important;
@@ -3502,7 +3492,7 @@ body.mobileApplyCtr * table,
 }
 
 .mobileApplyCtr .aquabtn button:hover {
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 20px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 20px center no-repeat #fc4237 !important;
 }
 
 .mobileApplyCtr .header p {
@@ -4103,7 +4093,7 @@ span.sectionExpandCollapse {
 }
 
 .sfCascadingPicklist select {
-  webkit-appearance: none;
+  -webkit-appearance: none;
   -moz-appearance: none;
   background-image: url("//lf-rmk.com/assets/select_arrow.svg");
   background-repeat: no-repeat;
@@ -4398,7 +4388,7 @@ div.rcmSuccessBackToResultsBtn,
 span.rcmBackToResultsBtn,
 div.rcmBackToResultsBtn {
   color: #fff !important;
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 10px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 10px center no-repeat #fc4237 !important;
   min-width: 270px;
   height: 45px;
   width: 100%;
@@ -4425,7 +4415,7 @@ span.rcmSuccessBackToResultsBtn:hover,
 div.rcmSuccessBackToResultsBtn:hover,
 span.rcmBackToResultsBtn:hover,
 div.rcmBackToResultsBtn:hover {
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 20px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 20px center no-repeat #fc4237 !important;
 }
 
 /*FOOTER*/
@@ -4567,11 +4557,11 @@ body.globalPortletBody .innerBdy {
   vertical-align: top;
   border: none;
   text-decoration: none !important;
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 20px center no-repeat #111 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 20px center no-repeat #111 !important;
 }
 
 .rcmSuccessBackToResultsBtn:hover {
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 10px center no-repeat #111 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 10px center no-repeat #111 !important;
 }
 
 .msgContent #applyConfirmMsg,
@@ -4582,7 +4572,7 @@ body.globalPortletBody .innerBdy {
 
 #rcmJobApplicationCtr {
   min-height: 75vh;
-  padding: relative;
+  position: relative;
 }
 
 #rcmJobApplicationCtr .msgContent {
@@ -4604,7 +4594,7 @@ body.globalPortletBody .innerBdy {
 .rcmSuccessBackToResultsBtn {
   width: auto !important;
   color: #fff;
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 10px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 10px center no-repeat #fc4237 !important;
   min-width: 270px;
   height: 45px;
   letter-spacing: 1px;
@@ -4652,7 +4642,7 @@ div.rcmSuccessBackToResultsBtn,
 span.rcmBackToResultsBtn,
 div.rcmBackToResultsBtn {
   color: #fff;
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 10px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 10px center no-repeat #fc4237 !important;
   min-width: 270px;
   height: 45px;
   width: 100%;
@@ -4676,7 +4666,7 @@ div.rcmBackToResultsBtn {
 span.rcmBackToResultsBtn,
 div.rcmBackToResultsBtn {
   color: #fff;
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 10px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 10px center no-repeat #fc4237 !important;
   width: 270px;
   min-height: 49px;
   padding: 15px 70px 15px 15px;
@@ -4714,7 +4704,7 @@ div.rcmBackToResultsBtn {
 
 .rcmSaveButton:hover,
 .rcmBackToResultsBtn:hover {
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 10px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 10px center no-repeat #fc4237 !important;
 }
 
 .rcmActionBtnCtr span:nth-child(2),
@@ -4736,8 +4726,6 @@ div.rcmBackToResultsBtn {
   background-color: #000 !important;
   border-bottom: none !important;
 }
-
-.sfDlgCntr .ftr {}
 
 .sfDlgCntr .button_row {
   padding: 0 !important;
@@ -4804,7 +4792,7 @@ div.rcmBackToResultsBtn {
 
 body #page.v12PageCtr #rcmJobApplicationCtr select,
 body #page.v12PageCtr #rcmCandidateProfileCtr select {
-  webkit-appearance: none;
+  -webkit-appearance: none;
   -moz-appearance: none;
   background-image: url("//lf-rmk.com/assets/select_arrow.svg");
   background-repeat: no-repeat;
@@ -5052,8 +5040,12 @@ body.mobileApplyCtr .rcmjobAppCanCard>div:nth-of-type(5) span {
 }
 
 .globalRadio .radioContainer:focus,
+body.mobileApplyCtr select:focus {
+  outline: 0 !important;
+  border: 1px solid #000 !important;
+}
+
 .globalRadio .radioContainer::-moz-focus-inner,
-body.mobileApplyCtr select:focus,
 body.mobileApplyCtr select::-moz-focus-inner {
   outline: 0 !important;
   border: 1px solid #000 !important;
@@ -5163,8 +5155,6 @@ body.mobileApplyCtr select::-moz-focus-inner {
 .sfCheckBoxEnabled:hover .indeterminate::before {
   color: #ddd;
 }
-
-.sfCheckBoxEnabled:hover {}
 
 .globalRadio .radioOnOver .radioIcon .dot {
   background-color: #ddd !important;
@@ -5528,7 +5518,7 @@ button.employee-refer-a-friend {
 
 #employee-refer-a-friend-modal select {
   padding: 5px;
-  webkit-appearance: none;
+  -webkit-appearance: none;
   -moz-appearance: none;
   background-image: url("//lf-rmk.com/assets/select_arrow.svg");
   background-repeat: no-repeat;
@@ -5537,7 +5527,11 @@ button.employee-refer-a-friend {
   background-size: 15px 15px;
 }
 
-#employee-refer-a-friend-modal select:focus,
+#employee-refer-a-friend-modal select:focus {
+  outline: 0 !important;
+  border: 1px solid #000 !important;
+}
+
 #employee-refer-a-friend-modal select::-moz-focus-inner {
   outline: 0 !important;
   border: 1px solid #000 !important;
@@ -5804,7 +5798,7 @@ iframe #map-container #search {
   left: -1vw;
 }
 
-#133.dlg_close_x {
+[id="133"].dlg_close_x {
   color: #222 !important;
   cursor: pointer;
 }
@@ -6122,7 +6116,7 @@ body.coreCSB.landing-page .dpcs-acknowledge button,
 body.coreCSB.landing-page .dpcsAccept,
 body.coreCSB.landing-page .landingpagedpcs button.dpcsAckButton-font-3006b783e78b2e9f {
   color: #fff !important;
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 10px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 10px center no-repeat #fc4237 !important;
 }
 
 body.coreCSB.landing-page .data-capture-form button.data-capture-form-button-background-3006b783e78b2e9f:hover,
@@ -6134,7 +6128,7 @@ body.coreCSB.landing-page .dpcs-acknowledge button:hover,
 body.coreCSB.landing-page .dpcsAccept:hover,
 body.coreCSB.landing-page .landingpagedpcs button.dpcsAckButton-font-3006b783e78b2e9f:hover {
   color: #fff !important;
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 20px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 20px center no-repeat #fc4237 !important;
 }
 
 body.coreCSB.landing-page .attachment-description {
@@ -6147,7 +6141,7 @@ body.coreCSB.landing-page .data-capture-form-button {
 }
 
 body.coreCSB.landing-page .data-capture-form button.data-capture-form-button-background-3006b783e78b2e9f {
-  background: url(‘//lf-rmk.com/assets/arrow-right-white.svg‘) right 10px center no-repeat #fc4237 !important;
+  background: url('//lf-rmk.com/assets/arrow-right-white.svg') right 10px center no-repeat #fc4237 !important;
   color: #fff;
 }
 
@@ -6251,18 +6245,18 @@ body.coreCSB.landing-page .fontcolora219adf13a493981 .force .the .color {
   color: #fff !important;
 }
 
-/*Q3-HACK*/
-
 .outershell div.searchwell input,
 select.optionsFacet-select {
   border: 1px solid #111 !important;
 }
 
+/* Q3-HACK deaktiviert (rote Formularleisten, ueberschrieb den weissen Stil):
 .rcmFormSection div.rcmFormSectionTopBar,
 .rcmFormSection h2.rcmFormSectionTitle {
   background-color: red !important;
   color: #fff !important;
 }
+*/
 
 /*MEDIAQUERIE MOBILE-PHONE*/
 
@@ -6629,12 +6623,12 @@ select.optionsFacet-select {
   }
 
   .jobColumnOne,
-  .jobColumneTwo {
+  .jobColumnTwo {
     width: 100% !important;
     display: block;
   }
 
-  .jobColumneTwo {
+  .jobColumnTwo {
     z-index: 5 !important;
   }
 
@@ -6726,7 +6720,7 @@ select.optionsFacet-select {
     -ms-hyphenate-limit-chars: 6 3 3;
     -ms-hyphenate-limit-lines: 2;
     -ms-hyphenate-limit-last: always;
-    -ms-hyphenate-limit-uone: 8%;
+    -ms-hyphenate-limit-zone: 8%;
   }
 
   .box-diversity {
@@ -6819,7 +6813,6 @@ select.optionsFacet-select {
     font-size: 30px !important;
   }
 
-  .item-content>h2 {}
 
   body.coreCSB.content-page #content .inner .buttontext>.inner>span>p,
   body.coreCSB.content-page #content .inner .buttontext>.inner>span>ol>li,
@@ -7460,4 +7453,10 @@ select.optionsFacet-select {
   }
 }
 
-/* ---------------- LOOKING FORWARD GmbH Berlin //lookingforward.to for adidas.com Version 09.9922909901 ---------------- */
+/* ---------------- LOOKING FORWARD GmbH Berlin //lookingforward.to for adidas.com Version 10.022212342 ---------------- */
+
+/* ---------------- Barrierefreiheit: sichtbarer Fokus nur bei Tastaturbedienung ---------------- */
+:root body :focus-visible {
+  outline: 2px solid #fc4237 !important;
+  outline-offset: 2px !important;
+}
